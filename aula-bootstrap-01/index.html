@@ -3,6 +3,7 @@
     <head>
         <title>Dente Clean</title>
         <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <!-- JavaScript Bundle with Popper -->
@@ -49,74 +50,91 @@
         </div>
         <div class="container"> <!-- container - area centralizada do conteudo -->
 
-            <div class="row">
-                <div class="col-md-10">
-                    <h1>Tratamentos</h1>
-                    <!-- lead -> estilo para o parágrafo -->
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
-                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. 
-                        Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                    </p>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
-                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. 
-                        Suspendisse urna nibh.
-                    </p>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
-                        Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. 
+            <div class="row"><!--grid -->
+                <div class="col-md-8 p-3">
+                    <article>
+                        <h1 class="titulo">Tratamentos</h1>
+                        <!-- lead -> estilo para o parágrafo -->
+                        <p class="lead fs-6 w-100">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
+                            Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. 
+                            Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                        </p>
+                        <p class="lead fs-6 w-100">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
+                            Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. 
+                            Suspendisse urna nibh.
+                        </p>
+                        <p class="lead fs-6 w-100">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
+                            Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. 
 
-                    </p>
+                        </p>
 
-                    <!-- btn btn-primary -> clase para estilo do link -->
-                    <a href="#" class="btn btn-primary disabled mb-3" >Saiba mais</a>
+                        <!-- btn btn-primary -> clase para estilo do link -->
+                        <a href="#" class="btn btn-primary disabled mb-3">Saiba mais</a>
+                    </article>
+                    <div class="text-success">
+                        <hr>
+                    </div>
 
                     <!-- img-fluid -> classe para imagem responsiva -->
                     <!-- mt-3 mb-3 -> margen top e botoom a nivel de distancia média -->
                     <div class="row">
-                        <div class="col-sm-6">
+
+                        <h1 class="titulo">Especialidades</h1>
+                        <div class="col-md-6"><!-- duas colunas a baixo de tratamento -->
                             <figure class="figure">
                                 <img src="imagem/img-1.jpg" class="figure-img img-fluid mt-0 mb-0">
                                 <figcaption class="figure-caption">A caption for the above image.</figcaption>
                             </figure>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-md-6">
                             <figure class="figure">
                                 <img src="imagem/img-2.jpg" class="figure-img img-fluid mt-0 mb-0">
                                 <figcaption class="figure-caption">A caption for the above image.</figcaption>
                             </figure>
                         </div>
-                    </div>
+                    </div><!-- fechamento da coluna abaixo do tratamento  -->
 
+                </div><!-- Fechamento da coluna da esquerda -->
+                <div class="col-md-4 bg-col-noticias p-3"><!-- Coluna da lista de posts -->
+                    <aside><!-- tag aside-> coteudo relacionado ao article -->
+                        <h1 class="titulo">Ultimas notícias</h1>
+                        <p class="paragrafo-noticias">Pensando mais a longo prazo, o início da atividade geral de 
+                            formação de atitudes promove a alavancagem das formas.
+                            <data class="d-block">Maio - 25 - 2012</data>
+                        </p>
+                        <p class="paragrafo-noticias">Pensando mais a longo prazo, o início da atividade geral de 
+                            formação de atitudes promove a alavancagem das formas.
+                            <data class="d-block">Maio - 25 - 2012</data>
+                        </p>
+                        <p class="paragrafo-noticias">Pensando mais a longo prazo, o início da atividade geral de 
+                            formação de atitudes promove a alavancagem das formas.
+                            <data class="d-block">Maio - 25 - 2012</data>
+                        </p>
+                        <p class="paragrafo-noticias">Pensando mais a longo prazo, o início da atividade geral de 
+                            formação de atitudes promove a alavancagem das formas.
+                            <data class="d-block">Maio - 25 - 2012</data>
+                        </p>
+                    </aside>
+                </div><!-- fechamento da coluna da lista de posts -->
+            </div><!-- fechamento da row -->
+            <div class="row">
+                <div class="col-3 bg-info vh-100">
+                    
                 </div>
-                <div class="col-md-2 bg-col-noticias">
-                    <h1>Ultimas notícias</h1>
-                    <p>Pensando mais a longo prazo, o início da atividade geral de 
-                        formação de atitudes promove a alavancagem das formas.
-                        <data>Maio - 25 - 2012</data>
-                    </p>
-                    <p>Pensando mais a longo prazo, o início da atividade geral de 
-                        formação de atitudes promove a alavancagem das formas.
-                        <data>Maio - 25 - 2012</data>
-                    </p>
-                    <p>Pensando mais a longo prazo, o início da atividade geral de 
-                        formação de atitudes promove a alavancagem das formas.
-                        <data>Maio - 25 - 2012</data>
-                    </p>
-                    <p>Pensando mais a longo prazo, o início da atividade geral de 
-                        formação de atitudes promove a alavancagem das formas.
-                        <data>Maio - 25 - 2012</data>
-                    </p>
+                 <div class="col-9 bg-dark vh-100">
+                    
                 </div>
             </div>
 
-        </div>
+        </div><!-- fechamento do container -->
 
         <div class="container-fluid mt-5 bg-light">
             <div class="d-inline-block w-100">
-                
-                    <div class="text-center">
-                        <p>Dente Clean 2022 <span>Politica de Privacidade</span></p>
-                    </div>
-               
+
+                <div class="text-center">
+                    <p>Dente Clean 2022 <span>Politica de Privacidade</span></p>
+                </div>
+
             </div>
         </div>
 
